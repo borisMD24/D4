@@ -6,6 +6,21 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .bg{
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-position: center 35%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            filter: blur(4px);
+            transform: scale(1.1);
+            position: absolute;
+            z-index: -100;
+        }
+    </style>
 </head>
 <body class="hoverflow-hidden">
     <div class="navbar navbar-dark bg-dark shadow-sm">
@@ -28,8 +43,8 @@
             </div>
         </div>
     </div>
-    <div class="jumbotron p-9 p-md-6 pb-18 text-white overflow-hidden">
-        <div class="d-flex p-2 justify-content-center">
+    <div class="jumbotron p-9 p-md-6 pb-18 text-white overflow-hidden position-relative bg-transparent">
+        <div class="d-flex p-2 justify-content-center" style="z-index: 2;">
             <div class="container pb-5">
                 <div class="d-flex p-2 justify-content-center">
                     <h1>
@@ -52,8 +67,10 @@
             </div>
         </div>
         
-        <div class="jumbotron p-2">
+        <div class="jumbotron p-2 bg-transparent">
         </div>
+        <div class="bg " style="background-image:url('https://woody.cloudly.space/app/uploads/cotelandesnature/2019/02/divers-2703-clntsophiepawlak-1920x960.jpg') ;"></div>
+
     </div>
     <div class="d-flex justify-content-center w-100 flex-column" >
         <div class="text-center w-100">
@@ -63,21 +80,21 @@
 
         </div>
         <div class="d-flex justify-content-center flex-column align-items-start row flex-md-row m-0">
-            <div class="flex-column col-10 mx-auto d-flex justify-content-center flex-column col-md-3 text-center">
+            <div class="flex-column col-10 mx-auto d-flex justify-content-center flex-column col-md-3 text-center my-4">
                 <i class="fas fa-money-bill-wave-alt display-2 mx-auto" ></i>
                 <h2 class="mx-auto">
                     Pas chère
                 </h2>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas provident id obcaecati magnam incidunt amet commodi, doloribus totam reprehenderit. Asperiores reprehenderit sunt vero nesciunt sequi, at esse ducimus ad consectetur?
             </div>
-            <div class="flex-column col-10 mx-auto d-flex justify-content-center flex-column col-md-3 text-center">
+            <div class="flex-column col-10 mx-auto d-flex justify-content-center flex-column col-md-3 text-center my-4">
                 <i class="fas fa-couch display-2 mx-auto" ></i>
                 <h2 class="mx-auto">
                     Relax
                 </h2>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nostrum. Obcaecati fugit, nihil soluta expedita dolorem labore qui! Vero sint pariatur saepe id, minus ab nihil natus velit. At, sint?
             </div>
-            <div class="flex-column col-10 mx-auto d-flex justify-content-center flex-column col-md-3 text-center">
+            <div class="flex-column col-10 mx-auto d-flex justify-content-center flex-column col-md-3 text-center my-4">
                 <i class="fas fa-users display-2 mx-auto" ></i>
                 <h2 class="mx-auto">
                     La communauté
@@ -100,7 +117,7 @@
                       <p class="card-text">
                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, quis accusamus ex debitis est nesciunt eveniet temporibus, aliquam, magni quo aliquid alias vero sunt animi vel similique aperiam odit natus!
                           <div class="text-muted">
-                              Sarah, avril 2019 test-update
+                              Sarah, avril 2019
                           </div>
                         </p>
                     </div>
@@ -132,7 +149,7 @@
     </div>
     <div class="d-flex flex-column justify-content-center mx-4 flex-md-row">
         <div class="d-block row col-12 mx-auto col-md-4">
-            <div class="card w-100">
+            <div class="card w-100 my-2">
                 <div class="card-body">
                   <h5 class="card-title text-center">
                       Semaine d'essai
@@ -154,7 +171,7 @@
               </div>
         </div>
         <div class="d-block row col-12 mx-auto col-md-4">
-            <div class="card w-100">
+            <div class="card w-100 my-2">
                 <div class="card-body">
                   <h5 class="card-title text-center">
                       Early bird
@@ -176,7 +193,7 @@
               </div>
             </div>
             <div class="d-block row col-12 mx-auto col-md-4">
-                <div class="card w-100">
+                <div class="card w-100 my-2">
                     <div class="card-body">
                     <h5 class="card-title text-center">
                         En trois fois
